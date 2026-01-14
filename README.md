@@ -1,1 +1,1 @@
-# odin-rock-paper-scissors
+This is the rock-paper-scissors game. It will be played entirely in the console.
