@@ -20,3 +20,20 @@ function getComputerChoice () {
     }
 
 }
+
+// Write a function that takes the user choice and returns it.
+// Create a new function named getHumanChoice.
+// Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
+
+function getHumanChoice () {
+   let humanChoice = prompt("Choose rock, paper or scissor!");
+   if (humanChoice==="rock") {
+    return "rock"
+   } else if (humanChoice==="paper") {
+    return "paper"
+   } else if (humanChoice==="scissor") {
+    return "scissor"
+   } else {
+    return "You entered an invalid value."
+   }
+}
