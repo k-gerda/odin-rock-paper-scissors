@@ -1,11 +1,3 @@
-// Create a new function named getComputerChoice.
-// getComputerChoice will randomly return one of the following string values: “rock”, “paper” or “scissors”.
-    
-    // Generate random numbers between 0 and 2. 
-    // Round them down to integers.
-    // If the current number is 0 return rock.
-    // If the current number is 1 return paper.
-    // If the current number is 2 return scissor.
 
 function getComputerChoice () {
     let randomNumber = Math.floor(Math.random()*3);
@@ -19,12 +11,8 @@ function getComputerChoice () {
 
 }
 
-// Write a function that takes the user choice and returns it.
-    // Create a new function named getHumanChoice.
-    // Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
-
 function getHumanChoice () {
-   let humanSelection = prompt("Select rock, paper or scissor!").toLowerCase(); // Make it case-insensitive.
+   let humanSelection = prompt("Select rock, paper or scissor!").toLowerCase(); 
    if (humanSelection==="rock") {
     return "rock";    
    } else if (humanSelection==="paper") {
@@ -36,24 +24,8 @@ function getHumanChoice () {
    }
 }
 
-// Write variables to keep track of the players score.
-    // Create two new variables named humanScore and computerScore in the global scope.
-    // Initialize those variables with the value of 0.
-
 let humanScore = 0;
 let computerScore = 0;
-
-// Write the logic to play a single round.
-    // Create a new function named playRound.
-    // Define two parameters for playRound: humanChoice and computerChoice. Use these two parameters to take the human and computer choices as arguments.
-    // Write the code for playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
-    // Increment the humanScore or computerScore variable based on the round winner.
-
-// Write the logic to play the entire game
-    // Create a new function named playGame.
-    // Move playRound function and score variables so that they’re declared inside of the new playGame function
-    // Play 5 rounds by calling playRound 5 times. 
-
 
 function playGame () {
     
@@ -86,18 +58,13 @@ function playGame () {
         };
         console.log("Your score: " + humanScore);
         console.log("Computer score: " + computerScore);
+    }
+    
+}  
 
-};    
-  
-} 
-
-playGame();
-playGame();
-playGame();
-playGame();
-playGame();
-
-// Write a function that returns a message when the game ends.
+for (let i=0; i<5; i++) {
+    playGame();
+}
 
 function gameOver () {
     if (humanScore > computerScore) {
